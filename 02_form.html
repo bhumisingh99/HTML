@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html forms</title>
+    </head>
+    <body>
+        <p> <mark>/* Form Tag */</mark></p>
+        <!-- ----------------------------------------------- -->
+        <h1>HTML FORM</h1>
+        <form>
+            <div>
+                <label for="username">Username:
+                    <input type="text" id="username" placeholder="Enter your username" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="email">Enter your Email:
+                    <input type="email" id="email" placeholder="Enter your email" required autocomplete="off" size="20" disabled value="bs140400@gmail.com"/>
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <lable for="pass"> Password:
+                    <input type="password" id="pass" placeholder="Enter your password" />
+                </lable>
+            </div>
+            <pre></pre>
+            <div>
+                <lable for="num"> Max Subject:
+                    <input type="number" id="num" max="5" min="1" value="1" />
+                </lable>
+            </div>
+            <pre></pre>
+            <div> Gender:
+                <label for="male">
+                    <input type="radio" name="gender" value="male" id="male" />male 
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" value="female" id="female" />female
+                </label>
+            </div>
+            <pre></pre>
+            <div> Hobbies:
+                <label for="music">
+                    <input type="checkbox" name="hobbies" value="music" id="music" />Music
+                </label>
+                <label for="sports">
+                    <input type="checkbox" name="hobbies" value="sports" id="sports" />Sports
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="country"> Country:
+                    <select name="country" id="country" placeholder="enter" >
+                        <option></option>
+                        <option value="INDIA">INDIA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="USA">United States of America</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Australia">Australia</option>
+                        <option value="New York">New York</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="Visited"> Countries:
+                    <!-- Difference: shows value and data both, but both must be different,
+                                    you can write what you want, if not in option, but cannot be done in select,
+                                    the manually typed option will be stored for the next time to show on the list,
+                                    the manually stored value can be deleted from the form when required,
+                                    cannot add placeholder in select
+                    -->
+                    <input type="text" id="Visited" name="Visited" list="countries" placeholder="Enter your country" />
+                    <datalist id="countries" >
+                        <option></option>
+                        <option value="INDIA">in</option>
+                        <option value="Canada">canada</option>
+                        <option value="USA">usa</option>
+                        <option value="Japan">japan</option>
+                        <option value="Australia">aus</option>
+                        <option value="New York">york</option>
+                        <option value="Paris">paris</option>
+                        <option value="Pakistan">pak</option>
+                    </datalist>
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="textarea_form"> Message:
+                    <textarea name="" id="textarea_form" cols="25" rows="4" placeholder="Enter your feedback"></textarea>
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="fileFormInsert"> Select File:
+                    <input type="file" name="fileUpload" id="fileFormInsert"/>
+                </label>
+            </div> 
+            <pre></pre>
+            <input type="submit" value="submit" />
+            <!-- or -->
+            <button type="submit">Click</button>
+            <pre></pre>
+            <div>
+                <label for="scroll_range"> Volume:
+                    <input type="range" id="scroll_range" name="volume" min="0" max="100" value="00"/>
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="calendar"> DOB[d-m-y]:
+                    <input type="date" id="calendar" name="birthdate" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="expirydate"> Month & year:
+                    <input type="month" id="expirydate" name="MonthYear" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="week"> week & year:
+                    <input type="week" id="week" name="vacationweek" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="clock"> Appointment time[hr:sec]:
+                    <input type="time" id="clock" name="appointment" />
+                </label>
+            </div>
+            <pre></pre>
+            <div> 
+                <label for="url"> website:
+                    <input type="url" id="url" name="website" placeholder="Enter website url" required autocomplete="off" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="fav_color"> Fav Color:
+                    <input type="color" id="palette" name="fav_color" />
+                </label>
+            </div>
+            <pre></pre>
+            <div>
+                <label for="searchEngine"> Search Query:
+                    <input type="search" id="searchEngine" name="search_Query" placeholder="Searching..." />
+                </label>
+            </div>
+        </form>
+
+        <hr/>
+
+        <form>
+            <fieldset>
+                <legend>Contact Info</legend>
+                <div>
+                    <label for="username">Username:
+                        <input type="text" id="username" placeholder="Enter your username" />
+                    </label>
+                </div>
+                <pre></pre>
+                <div>
+                    <label for="email">Enter your Email:
+                        <input type="email" id="email" placeholder="Enter your email" required autocomplete="off" size="20" disabled value="bs140400@gmail.com"/>
+                    </label>
+                </div>
+                <pre></pre>
+                <div>
+                    <label for="textarea_contact">Message:
+                        <textarea name="comment"  id="textarea_contact" cols="30" rows="5" placeholder="Enter comment"></textarea>
+                    </label>
+                </div>
+                <pre></pre>
+                <input type="submit" value="submit"/>
+            </fieldset>
+        </form>
+
+        <hr/>
+
+        <a href="03_semanticElements.html" target="_blank">ClickForSemanticTags</a>
+
+    </body>
+</html> 
